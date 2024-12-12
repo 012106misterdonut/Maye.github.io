@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Style+Script&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.50),
+      rgba(0, 0, 0, 0.50)
+    ),
+    url(newback.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 90%;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.50),
+      rgba(0, 0, 0, 0.50)
+    ),
+    url(newback.jpg);
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 9px;
+  z-index: 1000;
+}
+nav img {
+  width: 50px;
+}
+
+.navbar {
+  flex: 1;
+  text-align: right;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.navbar ul li a {
+  color: #fef9edff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.navbar ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #fff7d1;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.text-box {
+  width: 90%;
+  color: #fef9edff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 92px;
+  font-weight: lighter;
+  font-family: "Style Script", cursive;
+  font-style: italic;
+  text-shadow: 0px 3px 3px rgba(236, 114, 142, 1);
+}
+
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #fff7d1;
+}
+
+.but {
+  display: inline-block;
+  text-decoration: none;
+  color: #fef9edff;
+  border: 1px solid #fff7d1;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  border-radius: 0px 0px 30px 0px;
+  border-bottom-left-radius: 30px;
+}
+
+.but:hover {
+  border: 1.5px solid #f59db3ff;
+  background: #f59db3ff;
+  transition: 0.5s;
+}
+
+.intro {
+  color: #db767d;
+  margin-top: auto;
+  margin-bottom: none;
+  text-align: center;
+  padding-top: 70px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 30px;
+  background-image: url("1.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  box-shadow: 0 0 70px 30px rgba(245, 157, 179, 0.7);
+}
+
+.intro h1 {
+  color: #ec728eff;
+  font-size: 80px;
+  font-family: "Style Script", cursive;
+  font-weight: lighter;
+}
+
+.intro p {
+  text-justify: auto;
+  font-size: 25px;
+  color: #ec728eff;
+}
+
+.p {
+  margin-top: px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+  text-align: justify;
+}
+
+.row {
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 70px;
+  margin-top: 50px;
+  margin-right: 60px;
+  margin-left: 60px;
+  margin-bottom: 40px;
+}
+
+.skill {
+  margin-bottom: 10%;
+  justify-content: space-evenly;
+  text-align: left;
+  display: grid;
+}
+
+.aboutme {
+  flex-basis: 31%;
+  height: 230px;
+  color: #ec728eff;
+  background-color: rgba(254, 249, 237, 0.7);
+  background-size: cover;
+  padding: 40px 40px;
+  padding-bottom: 55px;
+  box-sizing: content-box;
+  transition: 0.5s;
+  border-radius: 80px 0px 80px 0px;
+  margin: auto;
+  border: 2px solid rgba(245, 157, 179, 0.7);
+}
+
+.aboutme img {
+  border: 2px solid rgba(245, 157, 179, 0.7);
+  border-radius: 70px 0px 70px 0px;
+  width: 295px;
+  height: 160px;
+  margin: auto;
+}
+
+.aboutme h3 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.intro h2 {
+  text-align: left;
+  font-size: 70px;
+  color: #ec728eff;
+  font-family: "Style Script", cursive;
+  text-align: center;
+  font-weight: lighter;
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+
+.aboutme:hover {
+  box-shadow: 0 0 20px 0px rgba(236, 114, 142, 2);
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+.aboutme p {
+  text-align: justify;
+}
+
+.soclink {
+  width: 100%;
+  margin: auto;
+  color: #fef9edff;
+  background-color: #f59db3ff;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.social {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.social img {
+  width: 10%;
+}
+
+.row2 {
+  margin-top: 2%;
+  display: flex;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+.footer {
+  margin: auto;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-size: 15px;
+  white-space: 10px;
+  background-color: #f59db3ff;
+}
+
+.vid {
+  background-color: rgba(245, 157, 179, 0.7);
+  color: #fef9edff;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 70px;
+  margin-bottom: -50px;
+}
+
+.vid video:hover {
+  box-shadow: 0 0 60px 10px rgba(236, 114, 142, 1);
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+.vid video {
+  margin: auto;
+  width:700px;
+  height:400px;
+  margin-bottom: 60px;
+  border-radius: 30px;
+  transition: 1s;
+  align-content: center;
+}
+
+.vid h1 {
+  color: #fef9edff;
+  font-family: "Style Script", cursive;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 95px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 5px;
+  text-shadow: 8px 3px 9px rgba(236, 114, 142, 3);
+}
+
+/* Responsive Styles (Media Queries) */
+@media (max-width: 960px) {
+.main {
+    background-size: cover; /* Maintain background image coverage */
+    background-position: center; /* Maintain background image position */
+  }
+
+  nav {
+    width: 100%; /* Make navbar full width */
+    padding: 10px; /* Reduce padding */
+    height: auto; /* Allow height to adjust */
+  }
+
+  .navbar {
+    text-align: center; /* Center navbar items */
+  }
+  
+  
+    .navbar ul li {
+    display: inline-block; /* Keep items inline */
+    margin: 0 5px;
+  }
+
+  .navbar ul li a {
+    font-size: 12px;
+  }
+
+  /* Adjust text box for smaller screens */
+  .text-box h1 {
+    font-size: 60px; /* Reduce font size */
+  }
+
+  .text-box ul li {
+    font-size: 11px;
+    width: 60px; /* Reduce button width */
+  }
+
+  /* Adjust lesson card layout */
+  .row {
+    grid-template-columns: 1fr; /* Stack lesson cards */
+    grid-gap: 20px;
+  }
+
+  .lesson {
+    flex-basis: 100%;
+    height: auto; /* Allow height to adjust */
+    padding: 20px;
+  }
+
+  .lesson img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Adjust leaderboard container */
+  .leaderboard-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* Adjust footer */
+  .footer {
+    padding: 20px 0;
+  }
+
+  /* Adjust intro section */
+  .intro h1 {
+    font-size: 50px;
+  }
+
+  .intro p {
+    font-size: 18px;
+  }
+
+  /* Adjust aboutme section */
+  .aboutme {
+    flex-basis: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .aboutme img {
+    width: 100%;
+    height: auto;
+  }
+
+  .aboutme h3 {
+    font-size: 20px;
+  }
+
+  .intro h2 {
+    font-size: 40px;
+  }
+
+  /* Adjust social links section */
+  .row2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* Adjust video section */
+  .vid h1 {
+    font-size: 50px;
+  }
+
+  .vid video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  /* Further adjustments for smaller screens */
+  .text-box h1 {
+    font-size: 40px;
+  }
+
+  .lesson img {
+    width: 100%;
+    height: auto;
+  }
+
+  .output {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .output a {
+    font-size: 20px;
+  }
+
+  /* Adjust intro section */
+  .intro h1 {
+    font-size: 40px;
+  }
+
+  .intro p {
+    font-size: 16px;
+  }
+
+  /* Adjust aboutme section */
+  .aboutme h3 {
+    font-size: 18px;
+  }
+
+  .intro h2 {
+    font-size: 30px;
+  }
+  
